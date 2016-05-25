@@ -14,7 +14,8 @@ import java.io.IOException;
 public class RestLogoutSuccessHandler extends AbstractAuthenticationTargetUrlRequestHandler implements LogoutSuccessHandler {
 
     @Override
-    public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
+    public void onLogoutSuccess(HttpServletRequest request,
+                                HttpServletResponse response, Authentication authentication)
             throws IOException, ServletException {response.setStatus(HttpServletResponse.SC_OK);
     }
 }
